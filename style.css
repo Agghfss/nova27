@@ -1,0 +1,109 @@
+body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(135deg,#050505,#16002b,#2b0052);
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.cup{
+    color:white;
+    text-shadow:
+    0 0 8px white,
+    0 0 18px white;
+}
+
+.nova{
+    color:#ff4dff;
+    text-shadow:
+    0 0 10px #ff4dff,
+    0 0 20px #d400ff,
+    0 0 40px #d400ff,
+    0 0 70px #a000ff;
+}
+
+h2{
+    color:#dddddd;
+    margin-bottom:40px;
+}
+
+#countdown{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+#countdown div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:18px;
+    width:95px;
+    padding:20px;
+    backdrop-filter:blur(10px);
+}
+
+#countdown span{
+    display:block;
+    font-size:42px;
+    font-weight:bold;
+    color:#ffffff;
+    text-shadow:0 0 10px #ffffff;
+}/* زخارف عربية في الزوايا */
+
+body::before{
+    content:"✦ ❈ ✦";
+    position:fixed;
+    top:25px;
+    left:25px;
+    font-size:45px;
+    color:rgba(255,255,255,0.12);
+    letter-spacing:12px;
+}
+
+body::after{
+    content:"✦ ❈ ✦";
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    font-size:45px;
+    color:rgba(255,255,255,0.12);
+    letter-spacing:12px;
+}
+
+/* دوائر مضيئة */
+
+.circle1{
+    position:fixed;
+    width:220px;
+    height:220px;
+    background:#8f00ff;
+    opacity:.12;
+    border-radius:50%;
+    filter:blur(70px);
+    top:-60px;
+    right:-60px;
+}
+
+.circle2{
+    position:fixed;
+    width:180px;
+    height:180px;
+    background:#ff2cff;
+    opacity:.10;
+    border-radius:50%;
+    filter:blur(70px);
+    bottom:-50px;
+    left:-50px;
+}
